@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
   return (
@@ -30,7 +31,7 @@ export default function Navbar(props) {
         <li className="nav-item">
           <a className="nav-link disabled">Disabled</a>
         </li>
-      </ul>
+      </ul> 
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
@@ -39,4 +40,9 @@ export default function Navbar(props) {
   </div>
 </nav>
   )
+}
+
+
+Navbar.propTypes = {
+    title: PropTypes.string,
 }
