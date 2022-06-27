@@ -1,27 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+let name="Kiran";
 function App() {
   return (
     <>
-    {/* fragment */}
-    <h1>Hello there</h1>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello there! kiran here 
-        </a>
-      </header>
+    <nav>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </nav>
+    <div className="container">
+      <h1>Hello{name}</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatem debitis vitae sunt ab similique facilis perspiciatis ipsa corrupti consectetur rem, animi unde quis velit quo, hic tempore aperiam excepturi.</p>
     </div>
+
     </>
   );
 }
