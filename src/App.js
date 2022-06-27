@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
 let name="Kiran";
 function App() {
   return (
     <>
-    <Navbar title="ReactApp"/>
+    <Navbar />
+    <div className="container my-3" >
+    <TextForm/>
+    </div>
     </>
   );
 }
