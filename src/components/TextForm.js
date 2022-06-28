@@ -1,16 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-export default function TextForm() {
+export default function TextForm(props) {
   return (
     <div>
-        <div className="mb-3">
-  <label for="exampleFormControlInput1" className="form-label">Email address</label>
+      <h1>{props.headding}</h1>
+  <div className="mb-3">
   <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
 </div>
 <div className="mb-3">
-  <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
   <textarea className="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
 </div>
+<button className="btn btn-primary">convert to uppercase</button>
 
     </div>
   )

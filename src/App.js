@@ -6,9 +6,9 @@ let name="Kiran";
 function App() {
   return (
     <>
-    <Navbar />
+    <Navbar title="Kiran"/>
     <div className="container my-3" >
-    <TextForm/>
+    <TextForm headding="Enter Details"/>
     </div>
     </>
   );
