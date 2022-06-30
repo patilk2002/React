@@ -14,26 +14,30 @@ const handlelowercase=()=>{
   setText(newText);
 }
 
+const clearText=()=>{
+  setText("");
+}
 
 const handleonchange=(event)=>{
   console.log("onchange");
   setText(event.target.value);
 }
 
-  const [text, setText] = useState("Enter Text Here");
+  const [text, setText] = useState("");
   // console.log(text)
   return (
     <>
     <div className='container'>
       <h1>{props.headding}</h1>
   <div className="mb-3">
-  <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+  {/* <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/> */}
 </div>
 <div className="mb-3">
   <textarea className="form-control" id="exampleFormControlTextarea1" value={text} rows="8" onChange={handleonchange}></textarea>
 </div>
 <button className="btn btn-primary mx-2" onClick={handleupcase}>convert to uppercase</button>
 <button className="btn btn-primary mx-2" onClick={handlelowercase}>convert to Lowercase</button>
+<button className="btn btn-primary mx-2" onClick={clearText}>clearText</button>
 
     </div>
 
